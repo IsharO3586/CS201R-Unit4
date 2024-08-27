@@ -1,6 +1,7 @@
 #include "vectorFunctions.h"
 
 void printVector(vector<int> v1) {
+    cout << "\t";
     for (int i = 0; i < v1.size(); ++i)  
         cout << v1.at(i) << " ";
 
@@ -49,7 +50,9 @@ void readVector(string str1, vector<vector<int>> &v1){
 }
 void printVector(vector<vector<int>> v1) {
     cout << "   Printing vector: " << v1.size() << ":" << v1.at(0).size() << endl;
+
     for (int i = 0; i < v1.size(); ++i) {
+        cout << "\t";
         for (int j = 0; j < v1.at(i).size(); ++j)
             cout << v1.at(i).at(j) << " ";
         cout << endl;
@@ -59,13 +62,15 @@ void printVector(vector<vector<int>> v1) {
 
 void addVectors(vector<vector<int>> v1, vector<vector<int>> v2) {
  //write logic to add v1 & v2 and print result 
-
-
+    cout << "   Adding two matrices together:\n";
+    printVector(v1);
+    printVector(v2);
 
 }
+
 void vectorExample2() {
     cout << "\nVECTOR - EXAMPLE 2\n";
-    vector<vector<int>> listNumb;
+    vector<vector<int>> tempV;
     string str1;
     ifstream inFile;
     inFile.open("data.txt");
@@ -73,9 +78,15 @@ void vectorExample2() {
         cout << "  Unable to open file\n";
         return;
     }
+
+    //add logic to read another 2-D matrix
+    //add call to addVectors to add matrices together & print all 3 matrices
+    
     while (getline(inFile, str1)) {
-        readVector(str1, listNumb);
-        printVector(listNumb);
+        readVector(str1, tempV);
+
     }
+
+    
     inFile.close();
 }
