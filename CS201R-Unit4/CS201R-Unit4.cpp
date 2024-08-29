@@ -9,12 +9,13 @@ int main()
     cout << "REVIEW EXAMPLES\n";
     //REVIEW - INTEGER DIVISION & STATIC CASTING
     int a = 10, b = 3;
-    float result = a / b;
+    float result = a /  static_cast<float(b);
     cout << "result = " << result << endl;
 
     //REVIEW STRING TO INTEGER
     string str1 = "1234";
     a = stoi(str1);
+    a += 15;
     cout << "string is now an integer: " << a << endl;
 
     //REVIEW INTEGER TO ASCII CHAR
