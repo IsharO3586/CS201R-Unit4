@@ -5,7 +5,7 @@
 #include "vectorFunctions.h"
 int main()
 {
-    /*
+    
     cout << "REVIEW EXAMPLES\n";
     //REVIEW - INTEGER DIVISION & STATIC CASTING
     int a = 10, b = 3;
@@ -26,7 +26,7 @@ int main()
         cout << char1 << " ";
     }
     cout << endl;
-
+    /*
     //BINARY STRING TO DECIMAL VALUE
     str1 = "1110";  //binary string
     int dec = 0, pow = 1;
@@ -58,6 +58,6 @@ int main()
     */
     cout << endl << endl << endl;
     //vectorExample1();  //find smallest;add values;print
-    vectorExample2();  //2-D vector (matrix)
+    //vectorExample2();  //2-D vector (matrix)
 }
  
